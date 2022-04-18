@@ -25,6 +25,8 @@ section{
   padding: 1em;
 }
 
+
+
 header, main, footer {
   margin: 0 auto;
 }
@@ -84,12 +86,15 @@ a .fab {
   color: white;
 }
 
-.course, .skills {
+
+.education1 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
+
 
 .course .title {
   color: #509e98;
@@ -98,34 +103,64 @@ a .fab {
   max-width: 33%;
 }
 
-.course .descrition {
+.education .description {
   -ms-flex: 0 0 66.6%;
   flex: 0 0 66.6%;
   max-width: 66.6%;
+  padding-left: 4em;
 }
 
-.course .descrition p {
+.course .description p {
   padding-left: 1em;
 }
 
-.skills .column {
-  -ms-flex: 0 0 50%%;
+.skills .column1 {
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.skills .column ul, ul.job-description {
+.column1 ul, ul.job-description {
   list-style-type: none;
 }
 
-.skills .column ul > li:before {
+.column1 ul > li:before {
   content: "►";
-  padding-right: 0.5em;
+  padding-right: 5px;
   color: #509e98;
+}
+
+.column2{
+  display: flex;
+  justify-content: flex-start;
+  padding-left:80px;
 }
 
 .school, .job-title {
   text-transform: capitalize;
+}
+
+.allg{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skills-1 {
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.languages{
+  display: block;
+  right: 0ex;
+  padding-left: 10px;
+}
+
+.pro-total{
+  display: flex;
+  justify-content: space-between;
 }
 
 .school span, .job-title span {
@@ -151,7 +186,7 @@ footer {
     display: block;
   }
 
-  .course .title, .course .descrition {
+  .course .title, .course .description {
     max-width: 100%;
   }
 }
